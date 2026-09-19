@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: darkslategray;
+    color: whitesmoke;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: black;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: lightcyan;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a {
+    color: lightgray;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: white;
+}
+
+
+.updated {
+    text-align: right;
+    padding: 15px 8%;
+    color: silver;
+}
+
+
+section {
+    padding: 70px 8%;
+    border-bottom: 1px solid gray;
+}
+
+.id {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.profile-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid lightcyan;
+    margin-bottom: 25px;
+}
+
+
+.index {
+    color: lightcyan;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: lightcyan;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+p {
+    color: lightgray;
+    max-width: 700px;
+}
+
+
+.links,
+.project-links,
+.contact-links {
+    margin-top: 20px;
+}
+
+.links a,
+.project-links a,
+.contact-links a {
+    color: lightcyan;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+.links a:hover,
+.project-links a:hover,
+.contact-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-box,
+.project,
+.timeline-item {
+    background: slategray;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.skill-box li {
+    color: white;
+    list-style: none;
+    margin: 5px 0;
+}
+
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project-number {
+    color: lightcyan;
+    margin-bottom: 8px;
+}
+
+.tags {
+    margin-top: 15px;
+}
+
+.tags span {
+    display: inline-block;
+    color: white;
+    background: dimgray;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+
+.subheading {
+    margin: 30px 0 15px;
+    color: lightcyan;
+}
+
+.timeline {
+    border-left: 2px solid gray;
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+}
+
+.timeline-item span {
+    color: silver;
+}
+
+
+.contact-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: lightcyan;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: white;
+    transform: translateY(-2px);
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: black;
+    color: silver;
+}
+
+footer p {
+    margin: auto;
+}
+
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+}
